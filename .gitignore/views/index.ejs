@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Call Video</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.js" charset="utf-8"></script>
+    <script src="lib/peer.min.js" charset="utf-8"></script>
+    <script src="lib/socket.io.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="DangNhap">
+      <div class="SignUp">
+        <div class="panel"> <p>Đăng nhập</p></div>
+        <div class="input">
+          <input type="text" id="txtUsername">
+        </div>
+      </div>
+    </div>
+    <div id="VideoCall">
+      <div class="wrapper">
+        <div class="left">
+          <button type="button" name="button" id="open">Open Stream</button>
+          <h3 id="myPeer">My Peer: </h3>
+          <div id="call">
+            <input type="text" id="remoteId" placeholder="Your Peer">
+            <button type="button" name="button" id="btnCall">Call</button>
+          </div>
+          <h2>Online User</h2>
+          <div class="w-95" id="listUser">
+
+          </div>
+        </div>
+        <div class="right">
+          <div class="video">
+              <video class="" id="localStream"  width="100%" height="100%" controls>
+              </video>
+                <!-- <div class="video-child">
+                  <video class="stream-child" width="100%" height="100%" controls>
+
+                  </video>
+                </div> -->
+          </div>
+          <div class="video">
+            <video class="stream" id="remoteStream" width="100%" height="100%" controls>
+
+            </video>
+          </div>
+          <div class="video">
+            <video class="stream" width="100%" height="100%" controls>
+
+            </video>
+          </div>
+          <div class="video">
+            <video class="stream" width="100%" height="100%" controls>
+
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js" charset="utf-8"></script>
+</html>
